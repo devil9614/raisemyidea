@@ -12,16 +12,25 @@ import { addDoc, collection } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 // import 'firebase/firestore
 
-const firebaseConfigInterface: {};
+type firebaseConfigType = {
+  apiKey: string;
+  authDomain: string;
+  databaseURL: string;
+  projectId: string;
+  storageBucket: string;
+  messagingSenderId: string;
+  appId: string;
+  measurementId: string;
+};
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA2jRScDgIf6H6EnDf7BYUlNjkyUi4ZGJw",
-  authDomain: "getar-f1ed9.firebaseapp.com",
-  projectId: "getar-f1ed9",
-  storageBucket: "getar-f1ed9.appspot.com",
-  messagingSenderId: "516703883176",
-  appId: "1:516703883176:web:79aaf2117bc7e66fea179d",
-  measurementId: "G-MBH7F1PY7J",
+  apiKey: "AIzaSyCUaui-8W7UfuZkHV7kk8RhmsGHVVxrNic",
+  authDomain: "raisemyidea-d6840.firebaseapp.com",
+  projectId: "raisemyidea-d6840",
+  storageBucket: "raisemyidea-d6840.appspot.com",
+  messagingSenderId: "435736508953",
+  appId: "1:435736508953:web:51cebed22fc66b589b8888",
+  measurementId: "G-M6CHKZBT5F",
 };
 const app = initializeApp(firebaseConfig);
 const auth: any = getAuth(app);
